@@ -1,7 +1,13 @@
 {
   "permissions": {
     "allow": [
-      "PowerShell(New-Item *)"
+      "PowerShell(New-Item *)",
+      "PowerShell(Get-Command *)",
+      "PowerShell(winget install *)",
+      "PowerShell($env:PATH = [Environment]::GetEnvironmentVariable\\(\"PATH\",\"User\"\\) + \";\" + [Environment]::GetEnvironmentVariable\\(\"PATH\",\"Machine\"\\); python --version)",
+      "PowerShell(pip install *)",
+      "PowerShell(& \"$env:LOCALAPPDATA\\\\Programs\\\\Python\\\\Python314\\\\python.exe\" --version)",
+      "PowerShell(& \"$env:LOCALAPPDATA\\\\Programs\\\\Python\\\\Python314\\\\python.exe\" -m pip install -r \"C:\\\\Visual Studio Code Project\\\\SunnyScript\\\\requirements.txt\")"
     ]
   }
 }
